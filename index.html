@@ -17,7 +17,61 @@
 </head>
 
 <body>
-    
+    <nav className="caja1">
+        <h1>Medidor Suscripciones</h1>
+    </nav>
+
+    <section className="caja2">
+        <ValoresPresupuesto datoPresupuesto={datoPresupuesto} suscripcionCompleta={suscripcionCompleta}
+            setGastado={setGastado} gastado={gastado} />
+
+        <form className="caja22" onSubmit={enviarSuscripcion}>
+            <h3>Agregar suscripción</h3>
+            <p>Servicio</p>
+            <select value={valorSuscripcion} onChange={modificarSuscripcion}>
+                <option value="">-- Elegir --</option>
+                <option value="youtube">YouTube Premium</option>
+                <option value="spotify">Spotify</option>
+                <option value="disney">Disney Plus</option>
+                <option value="amazon">Amazon prime</option>
+                <option value="apple">Apple TV</option>
+                <option value="netflix">Netflix</option>
+            </select>
+
+            <p>Valor suscripción</p>
+            <input type="number" placeholder='20$' value={valorCantidadSuscripcion}
+                onChange={modificarValorSuscripcion} />
+
+            <button>Agregar</button>
+
+            {error ? <p className='error'>Datos no validos</p> : null}
+            {errorCantidad ? <p className='error'>Presupuesto insuficiente</p> : null}
+
+        </form>
+    </section>
+
+    <div className='agregarPresupuesto'>
+        <form className='agregarPresupuesto1' onSubmit={enviarPresupuesto}>
+            <h3>Agregar presupuesto</h3>
+            <p>en Dolares</p>
+            <input type="number" onChange={modificarPresupuesto} />
+            <button>Agregar</button>
+            {error ? <p className='error'>Datos no validos</p> : null}
+        </form>
+    </div>
+
+    <aside className="caja3">
+        <h3>Suscripciones</h3>
+    </aside>
+
+    <footer className="caja4">
+        <div className="caja41" key={index}>
+            <img src={urlImagen} alt="Servicios" />
+            <p>{rey.cantidad} $</p>
+            <button onClick={borrarSuscripcion}>Borrar</button>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
