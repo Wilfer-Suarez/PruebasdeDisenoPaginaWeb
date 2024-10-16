@@ -36,19 +36,20 @@ body {
 
 div.cajaPrincipal {
     background-color: gray;
-    height: 80vh;
+    height: 100vh;
     width: 80vw;
     margin: 10vh 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 
     div.caja1 {
         background-color: #00000020;
 
         p {
-            background-color: goldenrod;
+            background-color: #FFD700;
             height: 50px;
             width: 200px;
             display: flex;
