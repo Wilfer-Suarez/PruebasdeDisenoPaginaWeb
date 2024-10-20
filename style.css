@@ -1,32 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
 body {
-    font-family: "Nunito", sans-serif;
-    color: #fff;
-
-    padding: 0;
-    margin: 0;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
     --s: 200px;
     /* control the size */
-
     --c1: #1d1d1d;
     --c2: #4e4f51;
     --c3: #3c3c3c;
-
-    /* --c1: #d2b48c;
+    --c1: #d2b48c;
     --c2: #9b8467;
-    --c3: #70614c; */
-
-    background: repeating-conic-gradient(from 30deg,
-            #0000 0 120deg,
-            var(--c3) 0 180deg) calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
-        repeating-conic-gradient(from 30deg,
-            var(--c1) 0 60deg,
-            var(--c2) 0 120deg,
-            var(--c3) 0 180deg);
+    --c3: #70614c;
+    background: repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577), repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
     background-size: var(--s) calc(var(--s) * 0.577);
 
     p {
@@ -35,103 +24,95 @@ body {
 }
 
 div.cajaPrincipal {
-    background-color: gray;
-    height: 100vh;
-    width: 80vw;
-    margin: 10vh 10vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 100vh;
+    margin: 10vh 10vw;
     border-radius: 10px;
+    background-color: gray;
 
     div.caja1 {
         background-color: #00000020;
 
         p {
-            background-color: #FFD700;
-            height: 50px;
-            width: 200px;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 50px;
+            background-color: #FFD700;
         }
     }
 
     div.cajaSecundaria {
-        background-color: firebrick;
-        height: 150px;
-        width: 80vw;
         display: flex;
         flex-direction: row-reverse;
+        width: 80vw;
+        height: 150px;
+        background-color: firebrick;
 
         div.caja2 {
-            background-color: #4e4f51;
-            height: 150px;
-            width: 300px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-
-            p {}
-
-            input {}
-
-            button {}
+            justify-content: center;
+            width: 300px;
+            height: 150px;
+            background-color: #4e4f51;
         }
 
         div.caja3 {
-            background-color: #00000020;
-            height: 150px;
-            width: 180px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 180px;
+            height: 150px;
+            background-color: #00000020;
 
             div {
-                background-color: black;
-                margin-bottom: 10px;
                 display: flex;
                 justify-content: end;
+                margin-bottom: 10px;
+                background-color: black;
 
                 p {
                     width: 50px;
                     text-align: center;
                 }
+
+                div.caja4 {
+                    background-color: #00000020;
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 200px;
+                        height: 50px;
+                        background-color: goldenrod;
+                    }
+                }
+
+                div.caja5 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 80vw;
+                    height: 50px;
+                    background-color: #00000020;
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100px;
+                        height: 50px;
+                        background-color: goldenrod;
+                    }
+                }
             }
         }
-    }
-
-    div.caja4 {
-        background-color: #00000020;
-
-        p {
-            background-color: goldenrod;
-            height: 50px;
-            width: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
-    div.caja5 {
-        background-color: #00000020;
-        width: 80vw;
-        height: 50px;
-        display: flex;
-        justify-content: space-evenly;
-
-        p {
-            background-color: goldenrod;
-            height: 50px;
-            width: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        button {}
     }
 }
