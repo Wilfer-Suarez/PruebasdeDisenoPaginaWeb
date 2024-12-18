@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: gray;
+        }
+
+        body,
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        div.caja1 {
+            background-color: firebrick;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div.caja2 {
+                background-color: darkcyan;
+                min-width: 25vw;
+                height: 50vh;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                div.caja3 {
+                    background-color: darkgoldenrod;
+                    /* min-width: 55vw; */
+                    height: 6vh;
+
+                    h1 {
+                        background-color: transparent;
+                        text-align: center;
+                    }
+                }
+
+                div.caja4 {
+                    background-color: salmon;
+                    /* min-width: 55vw; */
+                    height: 20vh;
+                }
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja1">
+        <div class="caja2">
+            <div class="caja3">
+                <h1>Medidor Suscripciones</h1>
+            </div>
+            <div class="caja4">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
